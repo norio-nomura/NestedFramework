@@ -10,49 +10,13 @@
 		6C4A5D5D1BC225DD002819DB /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4A5D5C1BC225DD002819DB /* Base32.framework */; };
 		6C4A5D5E1BC22657002819DB /* NestedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEFC73F1BC1F3FF0097A274 /* NestedFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C4A5D5F1BC2265D002819DB /* NestedFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEFC7641BC1F5AC0097A274 /* NestedFramework.swift */; };
-		6C4A5D611BC22691002819DB /* Base32.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C4A5D5C1BC225DD002819DB /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6C4A5D701BC22775002819DB /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4A5D6F1BC22775002819DB /* Base32.framework */; };
-		6C4A5D721BC22788002819DB /* Base32.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C4A5D6F1BC22775002819DB /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6C4A5D731BC22796002819DB /* NestedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEFC73F1BC1F3FF0097A274 /* NestedFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C4A5DA31BC2300B002819DB /* NestedFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEFC7641BC1F5AC0097A274 /* NestedFramework.swift */; };
 		6CEFC7401BC1F3FF0097A274 /* NestedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEFC73F1BC1F3FF0097A274 /* NestedFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CEFC7611BC1F55F0097A274 /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEFC7601BC1F55F0097A274 /* Base32.framework */; };
-		6CEFC7631BC1F5790097A274 /* Base32.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6CEFC7601BC1F55F0097A274 /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6CEFC7651BC1F5AC0097A274 /* NestedFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEFC7641BC1F5AC0097A274 /* NestedFramework.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		6C4A5D601BC22687002819DB /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				6C4A5D611BC22691002819DB /* Base32.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6C4A5D711BC22781002819DB /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				6C4A5D721BC22788002819DB /* Base32.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CEFC7621BC1F56D0097A274 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				6CEFC7631BC1F5790097A274 /* Base32.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6C4A5D451BC22430002819DB /* NestedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NestedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,7 +258,7 @@
 				6C4A5D411BC22430002819DB /* Frameworks */,
 				6C4A5D421BC22430002819DB /* Headers */,
 				6C4A5D431BC22430002819DB /* Resources */,
-				6C4A5D601BC22687002819DB /* CopyFiles */,
+				6CFAD8E21BC2422300E30774 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -313,7 +277,7 @@
 				6C4A5D631BC22746002819DB /* Frameworks */,
 				6C4A5D641BC22746002819DB /* Headers */,
 				6C4A5D651BC22746002819DB /* Resources */,
-				6C4A5D711BC22781002819DB /* CopyFiles */,
+				6CFAD8E31BC2423000E30774 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -332,7 +296,7 @@
 				6CEFC7381BC1F3FF0097A274 /* Frameworks */,
 				6CEFC7391BC1F3FF0097A274 /* Headers */,
 				6CEFC73A1BC1F3FF0097A274 /* Resources */,
-				6CEFC7621BC1F56D0097A274 /* CopyFiles */,
+				6CFAD8E11BC2420600E30774 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -406,6 +370,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CFAD8E11BC2420600E30774 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Base32.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+		6CFAD8E21BC2422300E30774 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/Base32.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+		6CFAD8E31BC2423000E30774 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/Base32.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C4A5D401BC22430002819DB /* Sources */ = {
