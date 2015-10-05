@@ -11,6 +11,10 @@
 		6C4A5D5E1BC22657002819DB /* NestedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEFC73F1BC1F3FF0097A274 /* NestedFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C4A5D5F1BC2265D002819DB /* NestedFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEFC7641BC1F5AC0097A274 /* NestedFramework.swift */; };
 		6C4A5D611BC22691002819DB /* Base32.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C4A5D5C1BC225DD002819DB /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6C4A5D701BC22775002819DB /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4A5D6F1BC22775002819DB /* Base32.framework */; };
+		6C4A5D721BC22788002819DB /* Base32.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C4A5D6F1BC22775002819DB /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6C4A5D731BC22796002819DB /* NestedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEFC73F1BC1F3FF0097A274 /* NestedFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C4A5DA31BC2300B002819DB /* NestedFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEFC7641BC1F5AC0097A274 /* NestedFramework.swift */; };
 		6CEFC7401BC1F3FF0097A274 /* NestedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEFC73F1BC1F3FF0097A274 /* NestedFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CEFC7611BC1F55F0097A274 /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEFC7601BC1F55F0097A274 /* Base32.framework */; };
 		6CEFC7631BC1F5790097A274 /* Base32.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6CEFC7601BC1F55F0097A274 /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -25,6 +29,16 @@
 			dstSubfolderSpec = 10;
 			files = (
 				6C4A5D611BC22691002819DB /* Base32.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C4A5D711BC22781002819DB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6C4A5D721BC22788002819DB /* Base32.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +57,8 @@
 /* Begin PBXFileReference section */
 		6C4A5D451BC22430002819DB /* NestedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NestedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C4A5D5C1BC225DD002819DB /* Base32.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Base32.framework; path = Carthage/Build/tvOS/Base32.framework; sourceTree = "<group>"; };
+		6C4A5D671BC22746002819DB /* NestedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NestedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4A5D6F1BC22775002819DB /* Base32.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Base32.framework; path = Carthage/Build/watchOS/Base32.framework; sourceTree = "<group>"; };
 		6CEFC73C1BC1F3FF0097A274 /* NestedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NestedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CEFC73F1BC1F3FF0097A274 /* NestedFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedFramework.h; sourceTree = "<group>"; };
 		6CEFC7411BC1F3FF0097A274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +104,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C4A5D631BC22746002819DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4A5D701BC22775002819DB /* Base32.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CEFC7381BC1F3FF0097A274 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +141,7 @@
 			children = (
 				6CEFC73C1BC1F3FF0097A274 /* NestedFramework.framework */,
 				6C4A5D451BC22430002819DB /* NestedFramework.framework */,
+				6C4A5D671BC22746002819DB /* NestedFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +161,7 @@
 			children = (
 				6CEFC7601BC1F55F0097A274 /* Base32.framework */,
 				6C4A5D5C1BC225DD002819DB /* Base32.framework */,
+				6C4A5D6F1BC22775002819DB /* Base32.framework */,
 			);
 			name = EmbededFrameworks;
 			sourceTree = "<group>";
@@ -241,6 +267,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C4A5D641BC22746002819DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4A5D731BC22796002819DB /* NestedFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CEFC7391BC1F3FF0097A274 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +303,25 @@
 			name = "NestedFramework-tvOS";
 			productName = NestedFramework;
 			productReference = 6C4A5D451BC22430002819DB /* NestedFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C4A5D661BC22746002819DB /* NestedFramework-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C4A5D6C1BC22746002819DB /* Build configuration list for PBXNativeTarget "NestedFramework-watchOS" */;
+			buildPhases = (
+				6C4A5D621BC22746002819DB /* Sources */,
+				6C4A5D631BC22746002819DB /* Frameworks */,
+				6C4A5D641BC22746002819DB /* Headers */,
+				6C4A5D651BC22746002819DB /* Resources */,
+				6C4A5D711BC22781002819DB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NestedFramework-watchOS";
+			productName = NestedFramework;
+			productReference = 6C4A5D671BC22746002819DB /* NestedFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6CEFC73B1BC1F3FF0097A274 /* NestedFramework-iOS */ = {
@@ -303,6 +356,9 @@
 					6C4A5D441BC22430002819DB = {
 						CreatedOnToolsVersion = 7.1;
 					};
+					6C4A5D661BC22746002819DB = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					6CEFC73B1BC1F3FF0097A274 = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
@@ -322,12 +378,20 @@
 			targets = (
 				6CEFC73B1BC1F3FF0097A274 /* NestedFramework-iOS */,
 				6C4A5D441BC22430002819DB /* NestedFramework-tvOS */,
+				6C4A5D661BC22746002819DB /* NestedFramework-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6C4A5D431BC22430002819DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C4A5D651BC22746002819DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,6 +413,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C4A5D5F1BC2265D002819DB /* NestedFramework.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C4A5D621BC22746002819DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4A5DA31BC2300B002819DB /* NestedFramework.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +466,40 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		6C4A5D6D1BC22746002819DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF675CE1BC20E750054DB24 /* watchOS-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = NestedFramework/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		6C4A5D6E1BC22746002819DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF675CE1BC20E750054DB24 /* watchOS-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = NestedFramework/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -528,6 +634,15 @@
 			buildConfigurations = (
 				6C4A5D571BC22430002819DB /* Debug */,
 				6C4A5D581BC22430002819DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C4A5D6C1BC22746002819DB /* Build configuration list for PBXNativeTarget "NestedFramework-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C4A5D6D1BC22746002819DB /* Debug */,
+				6C4A5D6E1BC22746002819DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
