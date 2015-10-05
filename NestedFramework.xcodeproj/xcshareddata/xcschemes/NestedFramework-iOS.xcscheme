@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6CEFC73B1BC1F3FF0097A274"
                BuildableName = "NestedFramework.framework"
-               BlueprintName = "NestedFramework"
+               BlueprintName = "NestedFramework-iOS"
                ReferencedContainer = "container:NestedFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,7 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6CEFC73B1BC1F3FF0097A274"
             BuildableName = "NestedFramework.framework"
-            BlueprintName = "NestedFramework"
+            BlueprintName = "NestedFramework-iOS"
             ReferencedContainer = "container:NestedFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6CEFC73B1BC1F3FF0097A274"
             BuildableName = "NestedFramework.framework"
-            BlueprintName = "NestedFramework"
+            BlueprintName = "NestedFramework-iOS"
             ReferencedContainer = "container:NestedFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

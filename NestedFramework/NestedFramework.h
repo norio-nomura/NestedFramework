@@ -6,7 +6,7 @@
 //  Copyright © 2015 Norio Nomura. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for NestedFramework.
 FOUNDATION_EXPORT double NestedFrameworkVersionNumber;
